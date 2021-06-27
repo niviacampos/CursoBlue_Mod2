@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meu projeto Einsten</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    </head>
+    <body>
+        <div class="div-infos">
+            <b>Nome:</b> {{ nome }} {{ sobrenome }}
+        </div>
+
+        <div class="div-infos">
+            <b>Idade:</b> {{ idade }}
+        </div>
+
+        {% if doido %}
+        <div class="div-infos">
+            <img src="{{imagem_doido}}" width="200">
+        </div>
+        <div class="div-infos">
+            {{ nome }} tá doido!
+        </div>
+
+        {% else %}
+        <div class="div-infos">
+            <img src="{{imagem_serio}}" width="200">
+        </div>
+        <div class="div-infos">
+            {{ nome }} tá sério!
+        </div>
+
+        {% endif %}
+    </body>
+</html>
