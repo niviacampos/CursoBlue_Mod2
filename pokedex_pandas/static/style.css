@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background: rgba(80, 77, 77, 0.021);
+    padding: 20px;
+    margin: 0;
+}
+.bloco{
+    display: flex;
+    justify-content: center;
+}
+.lista_pokemons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card_pokemon{
+    background: rgb(173, 165, 165);
+    border-top: 5px solid #c20d0d;
+    border-bottom: 5px solid #c20d0d;
+    border-radius: 5px;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    margin: 10px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    width: 500px;
+}
+.card_pokemon:hover{
+    background: #c49c9c;
+}
+.card_pokemon.selecionado {
+    background-color: #966262;
+}
